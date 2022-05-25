@@ -39,6 +39,8 @@ for i in range(0,10):
     N=10
 r=(N*Sxy-Sx*Sy)/(math.sqrt(N*Sx2-Sx*2)*math.sqrt(N*Sy2-Sy*2))
 print("The Correlation coefficient is %0.3f"%r)
+
+
 ```
 # output :
 ![Screenshot 2022-05-18 114510](https://user-images.githubusercontent.com/75234790/168970562-a90d7de7-94f8-4e5d-afb6-49ecc504cd40.png)
