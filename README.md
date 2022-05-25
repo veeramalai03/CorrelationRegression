@@ -39,11 +39,29 @@ for i in range(0,10):
     N=10
 r=(N*Sxy-Sx*Sy)/(math.sqrt(N*Sx2-Sx*2)*math.sqrt(N*Sy2-Sy*2))
 print("The Correlation coefficient is %0.3f"%r)
+byx=(n*sxy-sx*sy)/(n*sx2-sx**2)
+xmean=sx/n
+ymean=sy/n
+print("the reg line Y on x : Y=%0.3f %0.3f(X-%0.3f)"%(ymean,byx,xmean))
+plt.scatter(x,y)
+def Reg(x):
+    return ymean+byx*(x-xmean)
+x=np.linspace(20,40,51)
+y1=Reg(x)
+plt.plot(x,y1,'r')
+plt.xlabel("x-data")
+plt.ylabel("y-label")
+plt.legend(['REGRESSION LINE', 'DATA POINTS'])
+plt.show()
 
 
 ```
 # output :
 ![Screenshot 2022-05-18 114510](https://user-images.githubusercontent.com/75234790/168970562-a90d7de7-94f8-4e5d-afb6-49ecc504cd40.png)
+
+
+![dfgtyu](https://user-images.githubusercontent.com/75234790/170187936-76a28704-5da8-49a2-acb1-a67609bb26c2.png)
+
 
 
 
