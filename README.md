@@ -1,4 +1,6 @@
-# Correlation and Regression for Data Analysis
+## Ex no: 4
+## Date: 11/5/2022
+# <p align="center">Correlation and Regression</p>
 # Aim : 
 
 To analyse given data using  coeffificient of correlation and regression line.
